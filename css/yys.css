@@ -406,7 +406,7 @@ a {
 	float: left;
 	width: 250px;
 	height: 141px;
-	background-color: gold;
+	/*background-color: gold;*/
 	margin-left: 20px;
 }
 .shiting-box>div:first-child{
@@ -555,7 +555,6 @@ hr {
 	margin-left: -100px;
 }
 .qr-name{
-
 	position: relative;
 	width: 200px;
 	height: 20px;
@@ -565,7 +564,6 @@ hr {
 	color: #000;
 	font-size: 14px;
 	margin: 119px 0 0 85px;
-
 }
 .qr-code-ewm{
 	position: relative;
