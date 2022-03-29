@@ -47,6 +47,21 @@ a {
 	font-size: 12px;
 	color: #fff;
 }
+.menu-list {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	display: none;
+	width: 1350px;
+	height: 490px;
+	z-index: 1000;
+	text-align: left;
+	background: url(../img/shiting_bg_735f29c.jpg);
+	/*background: red;*/
+}
+.menu:hover > .menu-list {
+	display: block;
+}
 .sale {
 	position: absolute;
 	top: 0;
@@ -68,16 +83,20 @@ a {
 /*轮播图开始*/
 /*banner样式开始*/
 .banner {
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 884px;
+	height: 784px;
+	/*background: red;*/
 }
 .nav {
-	z-index: 999;
 	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 60px;
+	z-index: 999;
 	background: palegoldenrod url(../img/nav_back_bg_fd2505e.jpg) no-repeat center top;
 }
 .nav-wrap {
@@ -118,6 +137,16 @@ a {
 	height: 19px;
 	background: url(../img/search_b180dd5.png) no-repeat;
 }
+.nav-wrap .search:hover{
+	background: url(../img/search_b180dd5-fanzhuan.png) no-repeat;
+}
+.shishensousuotubiao{
+	position: relative;
+	top: -16px;
+	left: 156px;
+	width: 25px;
+	height: 25px;
+}
 .nav-list {
 	position: absolute;
 	top: 60px;
@@ -135,11 +164,11 @@ a {
 }
 /*banner样式结束*/
 .banner-box{
-	overflow: hidden;
 	position: relative;
-	width: 100%;
 	top: -10px;
 	height: 784px;
+	overflow: hidden;
+	width: 100%;
 }
 .banner-box>img{
 	margin-top: -10px;
@@ -150,8 +179,8 @@ a {
 }
 .banner-bottom{
 	position: absolute;
+	top: 500px;
 	left: 0;
-	bottom: 0;
 	width: 100%;
 	height: 287px;
 	background: url(../img/bot_head_bg_450ba6b.png) repeat-x center bottom;
@@ -292,13 +321,116 @@ a {
 }
 .world{
 	position: relative;
-	top: 0;
+	top: 50px;
 	left: 0;                  
 	width: 100%;
 	height: 495px;
 	margin-bottom: 70px;
 	overflow: hidden;
 }
+.world-tab{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 292px;
+	height: 36px;
+	border: 2px solid #c2a060;
+	z-index: 10;
+	margin: 0 0 0 120px;
+}
+.world-tab li>a{
+	color: #000;
+}
+.world-tab>ul{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 252px;
+	height: 36px;
+	list-style: none;
+	/*background: red;*/
+}
+.world-tab>ul :hover{
+	background: #c2a060;
+}
+.shishenlu{
+	position: relative;
+	top: -14px;
+	left: -39px;
+	float: left;
+	width: 96px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+	background: #c2a060;
+	color: #fff;
+}
+.zhujuelu{
+	position: relative;
+	top: -14px;
+	left: -38px;
+	float: left;
+	width: 96px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+}
+#fengexian{
+	position: relative;
+	top: -43px;
+	left: 153px;
+	width: 1px;
+	height: 25px;
+	color: #c2a060;
+}
+.shengyoulu{
+	position: relative;
+	top: -46px;
+	left: 155px;
+	float: left;
+	width: 96px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+}
+.shishen-search{
+	position: absolute;
+	top: 18px;
+	right: 0;
+	font-size: 12px;
+	width: 182px;
+	height: 23px;
+	z-index: 20;
+	border-bottom: 1px solid #c2a060;
+}
+.shishen-search input{
+	border: none;
+	outline: medium;
+	text-align: left;
+}
+.shishensousuotubiao{
+	background: url(../img/search_b180dd5.png) no-repeat;
+}
+.shishensousuotubiao:hover{
+	background: url(../img/search_b180dd5-fanzhuan.png) no-repeat;
+}
+.toList{
+	position: absolute;
+	left: 120px;
+	top: 63px;
+	color: #c2a060;
+	line-height: 170%;
+}
+.toList >i{
+	top: 0;
+	left: 0;
+	width: 8px;
+	height: 13px;
+	color: #c2a060;
+	margin-right: 20px;
+	background: url(../img/back_a41fdf7.png) no-repeat;
+
+ }
 .morld-title{
 	position: absolute;
 	top: 0;
@@ -338,7 +470,8 @@ a {
 /*游戏攻略开始*/
 .game{
 	position: relative;
-	top: 20px;
+	top: 50px;
+	left: 5px;
 	width:100%;
 	height: 510px;
 	background: url(../img/stategy_bg_4def7a7.jpg) no-repeat 0 174px;
@@ -367,7 +500,7 @@ a {
 	width: 40px;
 	height: 90px;
 	display: block;
-	padding: 0 10px;
+	padding: 6px 13px 0 13px;
 	box-sizing: border-box;
 	background: url(../img/stategy_tit_bg_3dfaee2.png);
 	color: #000;
@@ -385,6 +518,9 @@ a {
 /*游戏攻略结束*/
 /*视听盛宴开始*/
 .shiting{
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 262px;
 	padding-bottom: 47px;
@@ -401,11 +537,43 @@ a {
 	height: 215px;
 	background: url(../img/shiting_bg_735f29c.jpg) no-repeat left 70px;
 }
+.shiting-gengduo-box{
+	position: relative;
+	top: 170px;
+	left: 500px;
+	width: 210px;
+	height: 40px;
+	color: #c2a060;
+	font-size: 14px;
+	background: #fff;
+	border: 1px solid #c2a060;
+}
+.shiting-gengduo-box p{
+	position: relative;
+	top: -135px;
+	left: 40px;
+	width: 80px;
+	height: 20px;
+	overflow: hidden;
+	text-align: left;
+	/*background: red;*/
+}
+i{
+	position: relative;
+	top: -171px;
+	left: 100px;
+	width: 41px;
+	height: 5px;
+	display: inline-block;
+	background: url(../img/arrow_245be57.png) no-repeat;
+}
 .shiting-box>div{
 	position: relative;
+	top: 0;
+	left: 0;
 	float: left;
 	width: 250px;
-	height: 141px;
+	height: 40px;
 	/*background-color: gold;*/
 	margin-left: 20px;
 }
@@ -414,11 +582,19 @@ a {
 }
 .shiting-name{
 	position: absolute;
+	top: 120px;
 	right: -10px;
-	bottom: -10px;
 	background-color: #000;
 	padding: 5px 10px;
 	color: #fff;
+}
+.shiting-name >i{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 12px;
+	background: url(../img/au_35379f6.png) no-repeat;
 }
 /*视听盛宴结束*/
 /*泛娱乐开始*/
@@ -625,49 +801,56 @@ hr {
 .dibu{
 	position:absolute;
 	top: 3500px;
-	left: -288px;
-	width: 121%;
+	left: 0;
+	width: 100%;
 	height: 927px;
-	background: url(../img/bottom_bg_b30cb11.png) no-repeat;
 }
 .dibu-box{
-	width: 1200px;
+	position: relative;
+	top: 0;
+	left: -330px;
+	width: 1730px;
 	height: 100%;
 	margin: 0 auto;
-	position: relative;
+	background: url(../img/bottom_bg_b30cb11.png) no-repeat;
+}
+.dibu-logo-box{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .dibu-logo {
+	position: absolute;
+	top: 346px;
+	left: 550px;
 	width: 71px;
 	height: 224px;
 	background: url(../img/75.webp) no-repeat;
-	position: absolute;
-	top: 346px;
-	left: 380px;
 }
 .dibu-ewm-box{
-	width: 300px;
-	height: 300px;
 	position: absolute;
 	top: 290px;
-	right: -80px;
+	left: 1250px;
+	width: 300px;
+	height: 300px;
 	background: url("../img/bott_yuan_76bba3a.png") no-repeat;
 }
 .dibu-gengduo{
-	width: 300px;
-	height: 300px;
 	position: absolute;
 	top: 290px;
-	right: -80px;
+	left: 1250px;
+	width: 300px;
+	height: 300px;
 	background: url("../img/bott_black_82cac82.png") no-repeat;
 }
 .dibu-gengduo:hover{
-	background: url(../img/bott_ewm_853021b.png) no-repeat;top: 242px;left: 930px;
+	background: url(../img/bott_ewm_853021b.png) no-repeat;top: 242px;left: 1200px;
 	color: #000;
 }
 .footer{
 	position: absolute;
 	top: 600px;
-	left: 0;
+	left: 40px;
 	width: 100%;
 	height: 328px;
 	/*background: red;*/
