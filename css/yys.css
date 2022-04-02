@@ -11,22 +11,24 @@
 	height: 60px;
 }
 .hidden_box .hidden_show{
+	position: absolute;
 	height: 0;
 	width: 0;
 	padding: 0;
 	overflow: hidden;
 	opacity: 0;
 	transition: 0.8s;
-	position: absolute;
+
 }
 .hidden_box input:checked ~ .hidden_show{
+	position: absolute;
+	top: 150px;
+	left: 715px;
 	padding: 10px 0;
 	height: auto;
 	width: auto;
 	opacity: 1;
-	position: absolute;
-	top: 150px;
-	left: 715px;
+
 }
 a {
 	text-decoration: none;
@@ -48,8 +50,8 @@ a {
 	color: #fff;
 }
 .menu-list {
-	position: absolute;
-	top: 55px;
+	position: relative;
+	top: 0;
 	left: 0;
 	display: none;
 	width: 1350px;
@@ -57,7 +59,6 @@ a {
 	z-index: 1000;
 	text-align: left;
 	background: url(../img/shiting_bg_735f29c.jpg);
-	/*background: red;*/
 }
 .menu:hover > .menu-list {
 	display: block;
@@ -171,11 +172,11 @@ a {
 	width: 100%;
 }
 .banner-box>img{
+	/*position: relative;*/
+	/*left: -960px;*/
 	margin-top: -10px;
 	margin-left: 50%;
 	transform: translate(-960px);
-	/*position: relative;
-	left: -960px;*/
 }
 .banner-bottom{
 	position: absolute;
@@ -275,12 +276,18 @@ a {
 	padding: 6px 25px 16px 25px;
 }
 .none-img >a >h2{
+	position: relative;
+	top: 10px;
+	left: 0;
+	width: 100%;
 	height: 80px;
 	text-align: left;
 	font-size: 16px;
 	font-weight: 700;
 	color: #000;
 	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
 }
 .p-box{
 	position: relative;
@@ -291,6 +298,8 @@ a {
 	color: #000;
 	font-size: 9px;
 	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
 	/*background: red;*/
 }
 .arrow {
@@ -322,10 +331,9 @@ a {
 .world{
 	position: relative;
 	top: 50px;
-	left: 0;                  
+	left: 0;
 	width: 100%;
-	height: 495px;
-	margin-bottom: 70px;
+	height: 560px;
 	overflow: hidden;
 }
 .world-tab{
@@ -419,9 +427,24 @@ a {
 	left: 120px;
 	top: 63px;
 	color: #c2a060;
+	z-index: 996;
 	line-height: 170%;
 }
-.toList >i{
+.toList-list{
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 1280px;
+	height: 436px;
+	z-index: 999;
+	display: none;
+	background: #ffffff;
+}
+.toList:hover >.toList-list{
+	display: block;
+}
+.i{
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 8px;
@@ -429,8 +452,82 @@ a {
 	color: #c2a060;
 	margin-right: 20px;
 	background: url(../img/back_a41fdf7.png) no-repeat;
-
  }
+.toList span{
+	position: relative;
+	top: -21px;
+	left: 16px;
+}
+.shishen-tab{
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: left;
+	width: 1280px;
+	height: 0;
+}
+.shishen-tab a{
+	position: relative;
+	line-height: 170%;
+	font-size: 18px;
+	padding: 0 20px;
+	color: #c2a060;
+	text-decoration: none;
+}
+.shishen-tab>u{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+}
+.shishen-list-container{
+	position: relative;
+	top: 32px;
+	left: 0;
+	width: 100%;
+	height: 500px;
+}
+.shishen-list-container-box{
+	position: relative;
+	top: -20px;
+	left: 0;
+	width: 1118px;
+	height: 500px;
+}
+.shishen-lcb{
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.shishen-lcb>img{
+	width: 100px;
+	height: 100px;
+}
+.shishen-lcb>a{
+	position: relative;
+    top: -5px;
+    left: -8px;
+    color: #000000;
+}
+.Selection-box{
+	position: relative;
+	top: -80px;
+	left: 480px;
+	display: block;
+	width: 98px;
+	height: 30px;
+	border: 1px solid #ecdbbd;
+	float: left;
+}
+.Selection-box>a{
+	position: relative;
+	top: -2px;
+	left: 0;
+}
 .morld-title{
 	position: absolute;
 	top: 0;
@@ -438,7 +535,6 @@ a {
 	width: 54px;
 	height: 145px;
 	background: url(../img/index_z_203e03e.png) 352px -532px;
-
 }
 .world-img {
 	width: 1180px;
@@ -474,6 +570,7 @@ a {
 	left: 5px;
 	width:100%;
 	height: 510px;
+	z-index: 1;
 	background: url(../img/stategy_bg_4def7a7.jpg) no-repeat 0 174px;
 }
 .game-tit{
@@ -500,26 +597,346 @@ a {
 	width: 40px;
 	height: 90px;
 	display: block;
-	padding: 6px 13px 0 13px;
-	box-sizing: border-box;
-	background: url(../img/stategy_tit_bg_3dfaee2.png);
 	color: #000;
 	font-size: 14px;
 	line-height: 18px;
+	padding: 6px 13px 0 13px;
+	box-sizing: border-box;
+	background: url(../img/stategy_tit_bg_3dfaee2.png);
 }
 .game-box span:first-of-type{
-	top: 0;
+	top: 2px;
 	left: 18px;
 }
 .game-box span:last-of-type{
 	top: 22px;
 	left: 68px;
 }
+.game-list{
+	position: relative;
+	top: 229px;
+	left: -10px;
+	width: 1125px;
+	height: 55px;
+	float: left;
+	/*background: red;*/
+}
+.game-list-box{
+	position: relative;
+	top: 6px;
+	left: 75px;
+	width: 158px;
+	height: 50px;
+	float: left;
+	color: #78b798;
+}
+#zuixin{
+	width: 158px;
+	height: 50px;
+	color: #78b798;
+	background: #ffffff;
+}
+.game-list-box>a{
+
+}
+.game-ul{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 158px;
+	height: 50px;
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 12px;
+	list-style-type: none;
+}
+#game-i1{
+	position: absolute;
+	top: 20px;
+	left: 380px;
+	width: 2px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/index_z_203e03e.png") no-repeat -1155px -185px;
+}
+#game-i2{
+	position: absolute;
+	top: 20px;
+	left: 538px;
+	width: 2px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/index_z_203e03e.png") no-repeat -1155px -185px;
+}
+#game-i3{
+	position: absolute;
+	top: 20px;
+	left: 696px;
+	width: 2px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/index_z_203e03e.png") no-repeat -1155px -185px;
+}
+#game-i4{
+	position: absolute;
+	top: 20px;
+	left: 853px;
+	width: 2px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/index_z_203e03e.png") no-repeat -1155px -185px;
+}
+.game-list-box :hover {
+	color: #78b798;
+	background: #ffffff;
+}
+.tougao{
+	position: absolute;
+	top: 222px;
+	right: 40px;
+	color: #fff;
+	width: 163px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+	text-align: center;
+	border: 2px solid #fff;
+	text-decoration: none;
+}
+.tougao a{
+	color: #ffffff;
+}
+.gonglue-box{
+	position: relative;
+	top: 140px;
+	right:0;
+	width: 1058px;
+	height: 124px;
+	line-height: 170%;
+	float: left;
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+	border: 2px solid #81c0a1;
+	border-top: 0;
+	padding: 30px 0 0 118px;
+	background: #ffffff;
+}
+.game-gonglue{
+	position: relative;
+	top: 0;
+	left: -59px;
+	width: 350px;
+	height: 125px;
+	margin-right: 2px;
+	float: left;
+	/*background: red;*/
+}
+.fgx1{
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+	padding-top: 0;
+}
+.fgx1-1{
+	position: relative;
+	top: 0;
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+.fgx1-1{
+	position: relative;
+	top: 28px;
+	left: 0;
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+.fgx2{
+	line-height: 170%;
+	font-size: 12px;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+.fgx2-2{
+	position: relative;
+	top: 28px;
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+.fgx3{
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+.fgx3-3{
+	position: relative;
+	top: 28px;
+	line-height: 170%;
+	font-size: 12px;
+	list-style: none;
+	color: #000;
+	font-style: normal;
+	width: 2px;
+	height: 40px;
+	background: #ccc;
+	display: block;
+}
+ .gonglue{
+	 position: relative;
+	 top: -88px;
+	 right: 0;
+	 width: 318px;
+	 height: 20px;
+	 color: #000;
+	 font-size: 12px;
+	 padding-top: 0;
+	 text-align: left;
+	 /*隐藏溢出部分，显示为...(省略号)*/
+	 overflow: hidden;
+	 white-space: nowrap;
+	 text-overflow: ellipsis;
+ }
+ .zuozhe{
+	 position: relative;
+	 top: -100px;
+	 right: 120px;
+	 color: #666;
+ }
+.mengxin{
+	position: absolute;
+	top: 50px;
+	right: -742px;
+	width: 1058px;
+	height: 124px;
+	line-height: 170%;
+	float: left;
+	display: none;
+	font-size: 12px;
+	margin: 0;
+	border-top: 0;
+	z-index: 999;
+	padding: 30px 0 0 118px;
+	/*background: url("../img/shiting_bg_735f29c.jpg");*/
+	background: #f2f2f2;
+}
+#xinshou:hover>.mengxin{
+	 display: block;
+}
+.shishen-yuhun{
+	position: absolute;
+	top: 50px;
+	right: -585px;
+	width: 1059px;
+	height: 123px;
+	line-height: 170%;
+	float: left;
+	display: none;
+	font-size: 12px;
+	margin: 0;
+	border-top: 0;
+	z-index: 1000;
+	padding: 30px 0 0 118px;
+	/*background: url("../img/shiting_bg_735f29c.jpg");*/
+	background: #f2f2f2;
+}
+.game-zsx{
+	position: absolute;
+	top: 44px;
+	right: 44px;
+	color: #78b798;
+	width: 71px;
+	height: 4px;
+	z-index: 1001;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: -644px -727px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+#yuhun:hover>.shishen-yuhun{
+	display: block;
+}
+.miwen{
+	position: absolute;
+	top: 50px;
+	right: -424px;
+	width: 1056px;
+	height: 125px;
+	line-height: 170%;
+	float: left;
+	display: none;
+	font-size: 12px;
+	margin: 0;
+	border-top: 0;
+	z-index: 1000;
+	padding: 30px 0 0 118px;
+	/*background: url("../img/shiting_bg_735f29c.jpg");*/
+	background: #f2f2f2;
+}
+#miwen:hover>.miwen{
+	display: block;
+}
+.douji{
+	position: absolute;
+	top: 50px;
+	right: -268px;
+	width: 1058px;
+	height: 124px;
+	line-height: 170%;
+	float: left;
+	display: none;
+	font-size: 12px;
+	margin: 0;
+	border-top: 0;
+	z-index: 1000;
+	padding: 30px 0 0 118px;
+	/*background: url("../img/shiting_bg_735f29c.jpg");*/
+	background: #f2f2f2;
+}
+#douji:hover>.douji{
+	display: block;
+}
 /*游戏攻略结束*/
 /*视听盛宴开始*/
 .shiting{
 	position: relative;
-	top: 0;
+	top: 60px;
 	left: 0;
 	width: 100%;
 	height: 262px;
@@ -558,7 +975,7 @@ a {
 	text-align: left;
 	/*background: red;*/
 }
-i{
+.shiting-gengduo-box i{
 	position: relative;
 	top: -171px;
 	left: 100px;
@@ -634,6 +1051,23 @@ i{
 	float: left;
 	margin-right: 10px;
 }
+.fun_btn_right{
+	position: relative;
+	top: 43%;
+	left: 1154px;
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	border: 1px solid #c2a060;
+	margin-top: -35px;
+}
+.fun_btn_right>i{
+	width: 47px;
+	height: 9px;
+	display: block;
+	margin: 32px auto 0;
+	background: url(../img/arrow4_bdb96a0.png) no-repeat;
+}
 /*泛娱乐结束*/
 /*京都商业街开始*/
 .jingdu{
@@ -708,7 +1142,7 @@ hr {
 /*二维码开始*/
 .qr-code{
 	position: relative;
-	top: 10px;
+	top: 55px;
 	width: 1180px;
 	height: 330px;
 	font-size: 12px;
@@ -717,29 +1151,41 @@ hr {
 .qr-code-box {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -80px;
 	margin: 83px 0 0;
 	width: 100%;
-	height: 167px;
+	height: 145px;
+	background: #f2f2f2;
 }
 .qr-code-clr-box {
 	position: relative;
-	top: 10px;
-	left: 100px;
+	top: -15px;
+	left: 135px;
 	width: 100%;
 	height: 146px;
 	margin-left: -100px;
 }
 .qr-name{
 	position: relative;
+	top: 35px;
+	left: -128px;
 	width: 200px;
 	height: 20px;
-	top: 35px;
-	left: -85px;
 	line-height: 170%;
 	color: #000;
 	font-size: 14px;
+	font-family: 楷体, serif;
 	margin: 119px 0 0 85px;
+}
+.qr-tit{
+	position: relative;
+	top: 17px;
+	left: 40px;
+	width: 200px;
+	height: 20px;
+	color: #ccb786;
+	font-size: 14px;
+	font-family: 华文行楷, serif;
 }
 .qr-code-ewm{
 	position: relative;
@@ -760,9 +1206,10 @@ hr {
 	color: #000;
 	width: 16px;
 	float: left;
-	line-height: 14px;
 	margin: -115px 5px 0 8px;
 	display: block;
+	line-height: 14px;
+	font-family: 楷体, serif;
 }
 .p2 {
 	position: absolute;
@@ -770,10 +1217,11 @@ hr {
 	width: 16px;
 	height: 50px;
 	float: left;
-	font-size: 12px;
 	margin: -113px 5px 0 33px;
 	line-height: 100%;
 	display: block;
+	font-size: 12px;
+	font-family: 楷体, serif;
 }
 .p3 {
 	position: absolute;
@@ -782,25 +1230,33 @@ hr {
 	width: 16px;
 	height: 50px;
 	float: left;
-	font-size: 23px;
 	margin: -132px  5px 0 60px;
 	line-height: 100%;
 	display: block;
+	font-size: 23px;
+	font-family: 楷体, serif;
 }
 .shenle{
 	position: absolute;
-	width: 190px;
-	height: 270px;
-	background: url("../img/code_role_bg_58d7f15.png") 68px top no-repeat;
+	top: -22px;
+	left: 0;
+	width: 205px;
+	height: 280px;
 	margin-top: -58px;
 	margin-left: 930px;
 	overflow: hidden;
+	background: url("../img/code_role_bg_58d7f15.png") 68px top no-repeat;
+}
+.shenle img{
+	position: absolute;
+	top: 45px;
+	left: 11px;
 }
 /*二维码结束*/
 /*底部开始*/
 .dibu{
-	position:absolute;
-	top: 3500px;
+	position:relative;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 927px;
