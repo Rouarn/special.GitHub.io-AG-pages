@@ -18,7 +18,6 @@
 	overflow: hidden;
 	opacity: 0;
 	transition: 0.8s;
-
 }
 .hidden_box input:checked ~ .hidden_show{
 	position: absolute;
@@ -28,7 +27,6 @@
 	height: auto;
 	width: auto;
 	opacity: 1;
-
 }
 a {
 	text-decoration: none;
@@ -48,6 +46,14 @@ a {
 	background-color: #cf1132;
 	font-size: 12px;
 	color: #fff;
+}
+.header-img{
+	position: relative;
+	top: 5px;
+	left: 666px;
+	width: 160px;
+	height: 45px;
+	background: url(../img/logo_b5525b7.png) no-repeat;
 }
 .menu-list {
 	position: relative;
@@ -107,6 +113,10 @@ a {
 	height: 70px;
 	line-height: 70px;
 }
+.nav-wrap ul{
+	width: 100%;
+	height: 100%;
+}
 .nav-wrap li {
 	float: left;
 	width: 81px;
@@ -151,17 +161,169 @@ a {
 .nav-list {
 	position: absolute;
 	top: 60px;
-	left: 0;
-	display: none;
-	width: 100%;
+	left: -370px;
+	width: 1920px;
 	height: 140px;
+	z-index: 1;
+	display: none;
+	text-align: center;
 	background: url(../img/subnav_bg_5cc9309.jpg) center 0 no-repeat;
 }
-.nav:hover>.nav-list{
+.nav-list img{
+	border: 2px solid #000;
+}
+#nav-zx:hover>.nav-list{
+	display: block;
+}
+#nav-ss:hover>.nav-list{
+	display: block;
+}
+#nav-gl:hover>.nav-list{
+	display: block;
+}
+#nav-sq:hover>.nav-list{
+	display: block;
+}
+#nav-yl:hover>.nav-list{
+	display: block;
+}
+#nav-st:hover>.nav-list{
+	display: block;
+}
+#nav-zt:hover>.nav-list{
+	display: block;
+}
+#nav-zb:hover>.nav-list{
+	display: block;
+}
+#nav-cb:hover>.nav-list{
+	display: block;
+}
+#nav-qd:hover>.nav-list{
+	display: block;
+}
+#nav-xy:hover>.nav-list{
+	display: block;
+}
+#nav-fl:hover>.nav-list{
+	display: block;
+}
+#nav-zy:hover>.nav-list{
 	display: block;
 }
 .nav-list img{
 	margin: 24px 10px 0;
+}
+#Code-ony{
+	position: relative;
+	top: 0;
+	left: 280px;
+}
+#Code-oji{
+	position: relative;
+	top: 0;
+	left: 163px;
+}
+.zx-tit{
+	position: relative;
+	top: -4px;
+	left: -50px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.xy-tit-oji {
+	position: relative;
+	top: -4px;
+	left: -140px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.ss-tit{
+	position: relative;
+	top: 0;
+	left: -40px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.gl-tit{
+	position: relative;
+	top: 0;
+	left: -50px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.sq-tit{
+	position: relative;
+	left: -40px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.yl-tit{
+	position: relative;
+	left: -30px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.st-tit{
+	position: relative;
+	top: 0;
+	left: -30px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.zt-tit{
+	position: relative;
+	left: -50px;
+	background: #c2a060;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 2px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
 }
 /*banner样式结束*/
 .banner-box{
@@ -249,7 +411,7 @@ a {
 	position: absolute;
 	top: 71px;
 	left: 262px;
-	width: 1072px;
+	width: 1096px;
 	height: 200px;
 	overflow: hidden;
 	/*background: red;*/
@@ -260,7 +422,9 @@ a {
 	left: 8px;
 	width: 100%;
 	height: 200px;
-	overflow: hidden;
+	padding-bottom: 10px;
+	float: left;
+	overflow: auto;
 	/*background: gold;*/
 }
 .none-img{
@@ -272,7 +436,7 @@ a {
 	width: 200px;
 	height: 165px;
 	background: #fff;
-	margin: 0 17px 0 0;
+	margin: 0 17px 17px 0;
 	padding: 6px 25px 16px 25px;
 }
 .none-img >a >h2{
@@ -933,10 +1097,310 @@ a {
 	display: block;
 }
 /*游戏攻略结束*/
+/*同人手账开始*/
+.tongren{
+	position: relative;
+	top: 60px;
+	left: 0;
+	height: 487px;
+	background: url(../img/tongren_bg_4e00ea2.jpg) 0 bottom no-repeat;
+}
+.tongren-tit{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 53px;
+	height: 144px;
+	z-index: 10;
+	background-repeat: no-repeat;
+	background-position: -962px -532px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.tongren-tit-con{
+	position: relative;
+	top: 25px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 122px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: -1005px -687px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.tongren-num-con{
+	position: relative;
+	top: 5px;
+	left: 0;
+	width: 80px;
+	height: 18px;
+	float: right;
+	border-left: 1px solid #ccc;
+	/*background: red;*/
+}
+.gouyu-red{
+	position: absolute;
+	top: -4px;
+	left: 20px;
+	width: 16px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: -1158px -441px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.gouyu-blue-one{
+	position: absolute;
+	top: -4px;
+	left: 40px;
+	width: 16px;
+	height: 25px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: -1135px -441px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.gouyu-blue-two{
+	position: absolute;
+	top: -4px;
+	left: 60px;
+	width: 16px;
+	height: 25px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: -1135px -441px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.tongren-left{
+	position: relative;
+	top: -25px;
+	left: 83px;
+	width: 300px;
+	height: 456px;
+	margin: 0 0 0 65px;
+	/*background: red;*/
+}
+.tongren-left img{
+	width: 300px;
+	height: 415px;
+	margin-top: 24px;
+}
+.tongren-right{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 351px;
+	background: url(../img/loading_057a59b.gif) center center no-repeat #fff;
+}
+#r-img-one{
+	position: absolute;
+	top: 0;
+	left: 500px;
+}
+#r-img-two{
+	position: absolute;
+	top: 0;
+	left: 735px;
+}
+#r-img-three{
+	position: absolute;
+	top: 0;
+	left:970px;
+}
+.tongren-right-img-desc{
+	text-align: left;
+	border-left: 1px solid #000;
+	padding: 0 0 0 15px;
+	margin: 10px 0 0 20px;
+}
+.tongren-right-img-tit{
+	font-weight: 700;
+	overflow: hidden;
+}
+.tongren-right-img-desc p{
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+	line-height: 18px;
+}
+.tongren-right-img-love{
+	padding: 0 0 0 26px;
+	background: url(../img/love_be82b43.png) no-repeat;
+}
+.shuaxin{
+	position: absolute;
+	top: 450px;
+	left: 1100px;
+	width: 65px;
+	height: 22px;
+	text-align: right;
+	background-repeat: no-repeat;
+	background-position: -1151px -470px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.shuaxin span{
+	color: #7fc4d2;
+	font-size: 12px;
+}
+.tongren-tab{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 23px;
+	font-size: 12px;
+	/*background: red;*/
+}
+.tongren-tab ul{
+	position: relative;
+	top: 0;
+	left: 860px;
+	color: #bf9962;
+}
+.tongren-tab ul a{
+	color: #bf9962;
+}
+.tongren-tab li{
+	float: left;
+	padding: 0 20px;
+	border-right: 1px solid #ccc;
+	height: 12px;
+	line-height: 12px;
+	list-style: none
+}
+.tongren-tab-tit{
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 100px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: -999px -688px;
+	background-image: url(../img/index_z_203e03e.png);
+	/*background: greenyellow;*/
+}
+.dachu {
+	position: relative;
+	top: 29px;
+	left: 0;
+	width: 100%;
+	height: 228px;
+	margin: 46px 0 70px;
+	background: url(../img/ruzhu_bg_1311a36.jpg) center bottom no-repeat;
+}
+.dachu-tit{
+	text-align: center;
+	/*font-size: 0;*/
+}
+.tongren-dachu{
+	margin-right: 15px;
+	padding-right: 20px ;
+	border-right: 1px solid #cccccc;
+}
+.dachu-fenxiang{
+	width: 100%;
+	height: 228px;
+	color: #7fc4d2;
+	margin: 0 0 0 6px;
+	font-size: 14px;
+	/*background: red;*/
+}
+#yrz-qr {
+	position: absolute;
+	top: 0;
+	left: 613px;
+	z-index: 999;
+	 display: none;
+	background: #ffffff;
+}
+#yrz-qr img{
+	position: absolute;
+	top: -40px;
+	left: 115px;
+	width: 120px;
+	z-index: 11;
+	border: 1px solid #97d0db;
+	border-radius: 50%;
+}
+#dzzz-qr{
+	 position: absolute;
+	 top: 0;
+	 left: 740px;
+	 z-index: 999;
+	 display: none;
+	 background: #ffffff;
+ }
+#dzzz-qr img{
+	 position: absolute;
+	 top: -40px;
+	 left: 115px;
+	 width: 120px;
+	 z-index: 11;
+	 border: 1px solid #97d0db;
+	 border-radius: 50%;
+ }
+#dachu-yrz:hover>#yrz-qr{
+	display: block;
+}
+#dachu-dzzz:hover>#dzzz-qr{
+	display: block;
+}
+.dachu ul{
+	position: absolute;
+	top: 30px;
+	left: -40px;
+	width: 1280px;
+	height: 155px;
+	margin: 15px 0 0;
+	list-style-type: none;
+}
+.dachu ul li{
+	position: relative;
+	float: left;
+	width: 220px;
+	height: 155px;
+	margin: 0 20px 0 0;
+	background: url(../img/rz_bg_596c03c.jpg) center bottom no-repeat;
+}
+.dachu-img{
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: -50px;
+	overflow: hidden;
+}
+.dachu-img-bg{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 118px;
+	height: 110px;
+	margin: 0 0 0 -59px;
+	background-repeat: no-repeat;
+	background-position: -205px -741px;
+	background-image: url(../img/index_z_203e03e.png);
+}
+.dachu-img-tit{
+	position: relative;
+	top: 115px;
+	left: -3px;
+	color: #000;
+	font-size: 14px;
+	overflow: hidden;
+	/*background: red;*/
+}
+#dachu-sx {
+	position: absolute;
+	top: 203px;
+	left: 1090px;
+}
+/*同人手账结束*/
 /*视听盛宴开始*/
 .shiting{
 	position: relative;
-	top: 60px;
+	top: 400px;
 	left: 0;
 	width: 100%;
 	height: 262px;
@@ -956,7 +1420,7 @@ a {
 }
 .shiting-gengduo-box{
 	position: relative;
-	top: 170px;
+	top: 177px;
 	left: 500px;
 	width: 210px;
 	height: 40px;
@@ -1005,17 +1469,21 @@ a {
 	padding: 5px 10px;
 	color: #fff;
 }
-.shiting-name >i{
+.shiting-i{
 	position: relative;
-	top: 0;
-	left: 0;
+	top: 5px;
+	left: -4px;
 	width: 16px;
 	height: 12px;
+	float: left;
 	background: url(../img/au_35379f6.png) no-repeat;
 }
 /*视听盛宴结束*/
 /*泛娱乐开始*/
 .fan{
+	position: relative;
+	top: 400px;
+	left: 0;
 	width: 100%;
 	height: 516px;
 	margin-bottom: 70px;
@@ -1031,18 +1499,19 @@ a {
 	float: right;
 	width: 1060px;
 	height: 516px;
+	/*overflow: initial;*/
 }
 .fun-con{
 	position: relative;
 	width: 1060px;
-	height: 536px;
-	overflow: hidden;
+	height: 558px;
+	overflow: auto;
 }
 .fun-container{
 	position: absolute;
 	top: 20px;
 	left: 0;
-	width: 2300px;
+	width: 2080px;
 	height: 516px;
 }
 .fun-container>div{
@@ -1071,6 +1540,9 @@ a {
 /*泛娱乐结束*/
 /*京都商业街开始*/
 .jingdu{
+	position: relative;
+	top: 400px;
+	left: 0;
 	width: 100%;
 	height: 277px;
 }
@@ -1083,15 +1555,18 @@ a {
 }
 .jingdu-box-com{
 	position: relative;
-	width: 1200px;
-	height: 300px;
-	overflow: hidden;
+	top: 0;
+	left: 55px;
+	width: 1066px;
+	height: 280px;
+	overflow: auto;
+
 }
 .jingdu-box {
 	position: absolute;
-	left: 36px;
+	left: -90px;
 	float: right;
-	width: 2200px;
+	width: 1688px;
 	height: 250px;
 	padding-top: 20px;
 }
@@ -1113,22 +1588,20 @@ a {
 	font-size: 12px;
 	color: #000;
 }
-hr {
-	position: absolute;
-	font-size: 12px;
-	color: #000;
-	margin: 0 -10px 15px 130px;
+.hr {
+	position: relative;
+	top: -4px;
+	left: 0;
+	margin: -9px -10px 15px 130px;
 	padding: 0;
 	height: 5px;
-	bottom: 13px;
-	background: rgb(239, 239, 239);
-	opacity: 1;
-	width: 1060px;
+	/*background: rgb(239, 239, 239);*/
+	width: 1044px;
 }
 #hr-box{
-	position: absolute;
-	top: 250px;
-	left: 126px;
+	position: relative;
+	top: -20px;
+	left: 108px;
 	height: 30px;
 	width: 260px;
 	font-size: 12px;
@@ -1142,7 +1615,8 @@ hr {
 /*二维码开始*/
 .qr-code{
 	position: relative;
-	top: 55px;
+	top: 450px;
+	left: 0;
 	width: 1180px;
 	height: 330px;
 	font-size: 12px;
@@ -1256,7 +1730,7 @@ hr {
 /*底部开始*/
 .dibu{
 	position:relative;
-	top: 0;
+	top: 400px;
 	left: 0;
 	width: 100%;
 	height: 927px;
