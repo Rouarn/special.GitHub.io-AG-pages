@@ -1738,8 +1738,8 @@ a {
 .dibu-box{
 	position: relative;
 	top: 0;
-	left: -330px;
-	width: 1730px;
+	left: 0;
+	width: 1920px;
 	height: 100%;
 	margin: 0 auto;
 	background: url(../img/bottom_bg_b30cb11.png) no-repeat;
@@ -1788,9 +1788,9 @@ a {
 .share-box{
 	position: relative;
 	top: 140px;
-	left: 500px;
-	width: 990px;
-	height: 80px;
+	left: 458px;
+	width: 1045px;
+	height: 150px;
 	/*margin: 111px 880px;*/
 	color: #fff;
 	/*background: red;*/
@@ -1816,7 +1816,7 @@ a {
 .nie-cn-part1{
 	position: relative;
 	top: 25px;
-	left: 405px;
+	left: 450px;
 	/*position: absolute;*/
 	/*top: 200px;*/
 	/*left: 900px;*/
@@ -1830,9 +1830,9 @@ a {
 .nie-cn-part2{
 	position: relative;
 	top: 30px;
-	left: -76px;
-	width: 990px;
-	height: 120px;
+	left: -30px;
+	width: 1045px;
+	height: 100px;
 	color: #fff;
 	/*background: gold;*/
 }
