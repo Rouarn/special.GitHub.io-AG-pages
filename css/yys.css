@@ -3,6 +3,9 @@
 	width: 100%;
 	max-width: 1920px;
 	min-width: 1280px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto
 	/*自动找高*/
 }
 /*头部开始*/
@@ -1734,28 +1737,20 @@ a {
 	left: 0;
 	width: 100%;
 	height: 927px;
-	background: url(../img/bottom_bg_b30cb11.png) -200px 0;
-}
-.dibu-dibu{
-	position:relative;
-	top: 0;
-	left: -226px;
-	width: 100%;
-	height: 100%;
+	background: url(../img/bottom_bg_b30cb11.png) center no-repeat;
 }
 .dibu-box{
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 1920px;
+	width: 1200px;
 	height: 100%;
 	margin: 0 auto;
-	/*background: url(../img/bottom_bg_b30cb11.png) no-repeat;*/
 }
 .dibu-logo-box{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -360px;
 }
 .dibu-logo {
 	position: absolute;
@@ -1788,18 +1783,17 @@ a {
 .footer{
 	position: absolute;
 	top: 600px;
-	left: 40px;
+	left: -369px;
 	width: 100%;
 	height: 328px;
 	/*background: red;*/
 }
 .share-box{
-	position: relative;
+	position: absolute;
 	top: 140px;
 	left: 458px;
 	width: 1045px;
 	height: 150px;
-	/*margin: 111px 880px;*/
 	color: #fff;
 	/*background: red;*/
 }
@@ -1832,7 +1826,6 @@ a {
 	height: 46px;
 	text-align: left;
 	margin: 0 260px -48px -450px;
-
 	/*background: red;*/
 }
 .nie-cn-part2{
